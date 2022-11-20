@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { InputBase, Typography } from '@mui/material';
 import { MoreHoriz } from "@mui/icons-material";
 
-function Title() {
+function Title({title}) {
 
   const style = {
       title: {
@@ -34,7 +34,7 @@ const [open, setOpen] = useState(false);
   {open ? (
     <div>
     <InputBase
-    value = 'Todo'
+    value = {title}
     style = {style.input}
     autoFocus
     fullWidth
@@ -46,7 +46,7 @@ const [open, setOpen] = useState(false);
     <Typography
     onClick = {() => setOpen(!open)}
     style = {style.todo} >
-    Todo
+    {title}
     </Typography>
     <MoreHoriz style = {style.horiz} />
     </div>

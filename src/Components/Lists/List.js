@@ -1,8 +1,9 @@
 import React from 'react';
-import { Paper } from '@mui/material';
+import { CssBaseline, Paper } from '@mui/material';
 import Card from './Card';
 import Title from './Title';
 import Input from '../Input/Input';
+/*import Cards from './Card';*/
 /*{cards.map(card => (
   <cards text= {cards.text}/>
 ))}*/
@@ -15,16 +16,17 @@ const style = {
   }
 }
 
-function Lists() {
+function List({list}) {
   return (
     <div>
     <Paper style={style.list} >
-    <Title />
-    </Paper>
-    <Card />
-    <Card />
-    <Card />
+    <CssBaseline />
+    <Title title={list.title} />
+    {list.cards.map((card) => {
+      <Card key={card.id} Card={card} />
+    })}
     <Input />
+    </Paper>
     </div>
   )
 }
@@ -38,4 +40,4 @@ function Lists() {
     </div>
   )
  }*/
- export default Lists;
+ export default List;

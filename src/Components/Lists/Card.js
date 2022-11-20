@@ -1,6 +1,7 @@
 import React from 'react';
-import Card from '@mui/material/Card';
-import Typography from '@mui/material/Typography';
+/*import Typography from '@mui/material/Typography';
+import { Card } from '@mui/material';*/
+import { Paper } from '@mui/material';
 
 const style = {
   card: {
@@ -9,14 +10,19 @@ const style = {
   }
 }
 
-/*const Cards = ({card}) => {*/
-function Cards() {
-  return (
-    <Card style={style.card} >
+/*<Paper style={style.card} >{card.content}</Paper>*/
+
+/*<Card style={style.card} >
         <Typography>
-          Word of the Day
+          {card.content}
         </Typography>
-    </Card>
-  )
+      </Card>*/
+/*const Cards = ({card}) => {*/
+function Card({card}) {
+  return (
+    <div>
+    <Paper style={style.card} >{card.content}</Paper>
+    </div>
+  );
  }
- export default Cards;
+ export default Card;
