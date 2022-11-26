@@ -1,6 +1,6 @@
-import React, { useState/*, useEffect */ } from 'react';
-import List from './Components/Lists/List';
-import Store from './Utils/Store';
+import React, { useState } from 'react';
+import List from './Components/Lists/Lists';
+import store from './Utils/store';
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
     }
   };
 
-  const [data, setData] = useState(Store);
+  const [data, setData] = useState(store);
 
     return (
       <div style={style.root}>
@@ -26,9 +26,5 @@ function App() {
       </div>
     );
   }
-
-  /*const mapStateToProps = state => ({
-    Lists: state.Lists/*myLists
-  })*/
 
   export default(App);

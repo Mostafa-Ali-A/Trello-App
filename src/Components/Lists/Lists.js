@@ -1,12 +1,8 @@
 import React from 'react';
 import { CssBaseline, Paper } from '@mui/material';
-import Card from './Card';
-import Title from './Title';
+import Card from './Cards';
+import Title from './Titles';
 import Input from '../Input/Input';
-/*import Cards from './Card';*/
-/*{cards.map(card => (
-  <cards text= {cards.text}/>
-))}*/
 
 const style = {
   list: {
@@ -22,22 +18,13 @@ function List({list}) {
     <Paper style={style.list} >
     <CssBaseline />
     <Title title={list.title} />
-    {list.cards.map((card) => {
-      <Card key={card.id} Card={card} />
-    })}
+    {list.cards.map((card) => (
+      <Card key={card.id} card={card} />
+  ))}
     <Input />
     </Paper>
     </div>
   )
 }
 
- /*const Lists = ({title, cards}) => {
-  return (
-    <div class= 'content'>
-    <h4>{title}</h4>
-    <Cards card= 'nam' />
-    
-    </div>
-  )
- }*/
  export default List;

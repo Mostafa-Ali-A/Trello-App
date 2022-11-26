@@ -40,7 +40,7 @@ function InputCard({setOpen}) {
       <div style = {style.confirm} >
       <Button style = {style.button} onClick= {() => setOpen(false)} >Add Card</Button>
       <IconButton onClick= {() => setOpen(false)} />
-      <CloseIcon style={style.add} />
+      <CloseIcon style={style.add} onClick= {() => setOpen(false)} />
       </div>
     </div>
   )
