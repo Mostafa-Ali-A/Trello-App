@@ -6,9 +6,6 @@ import ClearIcon from '@mui/icons-material/Clear';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
 function InputCard({ setOpen }) {
-
-  const [text, setText] = useState('');
-
   return (
     <div>
       <div>
@@ -32,8 +29,8 @@ function InputCard({ setOpen }) {
       >Add card</Button>
       <IconButton onClick= {() => setOpen(false)} />
       <ClearIcon
-      className= 'inputCard close'
-      onClick= {() => {setOpen(false);setText('');}} />
+      className= 'inputCard clear'
+      onClick= {() => setOpen(false)} />
       <MoreHorizIcon
       className= 'horiz icon' />
       </div>
