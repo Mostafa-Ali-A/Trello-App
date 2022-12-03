@@ -2,26 +2,18 @@ import React from 'react';
 import { CssBaseline, Paper } from '@mui/material';
 import Card from './Cards';
 import Title from './Titles';
-import Input from '../Input/Input';
-
-const style = {
-  list: {
-    width: 300,
-    backgroundColor: '#EBECF0',
-    marginLeft: 15
-  }
-}
+import InputContainer from '../Input/InputContainer';
 
 function List({list}) {
   return (
     <div>
-    <Paper style={style.list} >
+    <Paper className= 'lists' >
     <CssBaseline />
     <Title title={list.title} />
     {list.cards.map((card) => (
       <Card key={card.id} card={card} />
   ))}
-    <Input />
+    <InputContainer />
     </Paper>
     </div>
   )

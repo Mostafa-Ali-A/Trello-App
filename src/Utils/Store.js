@@ -1,15 +1,15 @@
 const cards = [
   {
     id: 'card-1',
-    content: 'Learning how to cook'
+    content: 'Learn Back End Node.js'
   },
   {
     id: 'card-2',
-    content: 'Making a sandwich'
+    content: 'Build Full Stack Projects'
   },
   {
     id: 'card-3',
-    content: 'Taking the trash out'
+    content: 'Work as Freelance'
   }
 ];
 
@@ -17,7 +17,7 @@ const data = {
   lists: {
     'list-1': {
       id: 'list-1',
-      title: 'Todo',
+      title: 'To Do',
       cards
     },
   'list-2': {
@@ -26,23 +26,16 @@ const data = {
     cards: [
     {
       id: 'Card-4',
-      content: 'Cloning trello'
+      content: 'Improve My React Skills'
       },
       {
         id: 'Card-5',
-        content: 'Upload video to youtube'
+        content: 'Build React Projects'
       }
     ]
 },
   },
   listIds: ['list-1', 'list-2'],
 };
-
-/*const ListsReducer = (state = initialState, action) => {
-switch (action.type) {
-  default:
-    return state;
-    }
-};*/
 
 export default data;

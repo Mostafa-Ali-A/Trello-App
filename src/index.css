@@ -1,0 +1,119 @@
+/* Main Contents */
+.container {
+  width: 300px;
+  background-color: #EBECF0;
+  padding: 8px;
+  margin-left: 15px;
+  margin-top: 30px;
+  border-radius: 3px;
+}
+
+.lists {
+  width: 300px;
+  background-color: #EBECF0;
+  margin-left: 15px;
+}
+
+.cards {
+  padding: 3px, 3px, 3px, 6px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.card.input3 {
+  margin: 0 15px 45px 15px;
+  font-size: 15.4px;
+}
+
+.titles.input1 {
+  margin: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  height: 2px;
+  margin-bottom: 0px;
+  margin-top: 22.5px;
+}
+
+.titles.input1:focus {
+  background-color: #ddd;
+}
+
+.titles {
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.titles.todo {
+  flex-grow: 15;
+  font-size: 15px;
+  font-weight: bold;
+}
+.horiz.icon{
+  margin-right: auto;
+  margin-left: 152px;
+}
+.horiz {
+  color: #6b778c;
+  margin-right: auto;
+  cursor: pointer;
+}
+.horiz:hover {
+  color: #4b5361;
+}
+
+.input.card {
+  margin-top: 20px;
+}
+
+.input.input2 {
+  padding: 3px, 3px, 3px, 6px;
+  margin: 0px, 3px, 3px, 3px;
+  background-color: #EBECF0;
+  color: #5E6C84;
+  border: none;
+  cursor: pointer;
+}
+.input.input2:hover {
+  background-color: #cdcfda;
+  color: #4b5361;
+}
+
+.inputCard.card1 {
+  padding-bottom: 30px;
+  margin: 0px, 3px, 3px, 3px;
+  border: none;
+}
+
+.inputCard.input3 {
+  margin: 0;
+}
+
+::placeholder {
+  font-weight: bold;
+}
+
+.inputCard.button {
+  background-color: #0079BF;
+  color: #fff;
+  margin: 6px;
+  text-transform: none;
+}
+.inputCard.button:hover {
+  background-color: #026aa7;
+}
+
+.inputCard.confirm {
+  margin: 0px, 3px, 3px, 3px;
+}
+
+.inputCard.close {
+  color: #6b778c;
+  cursor: pointer;
+  margin-left: -15px;
+}
+.inputCard.close:hover {
+  color: #4b5361;
+}
+

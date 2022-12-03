@@ -1,31 +1,8 @@
 import React, { useState } from "react";
 import { InputBase, Typography } from '@mui/material';
-import { MoreHoriz } from "@mui/icons-material";
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
 function Title({title}) {
-
-  const style = {
-      title: {
-        margin: 15,
-        display: 'flex'
-      },
-      todo: {
-        flexGrow: 15,
-        fontSize: 15,
-        fontWeight: 'bold'
-      },
-      input: {
-        margin: 15,
-        /*fontSize: 15,*/
-        fontWeight: 'bold',
-        /*"&:FocusEvent": {
-          background: '#ddd'
-        }*/
-      },
-      horiz: {
-        color: '#5E6C84'
-      }
-  };
 
 const [open, setOpen] = useState(false);
 
@@ -35,20 +12,23 @@ const [open, setOpen] = useState(false);
     <div>
     <InputBase
     value = {title}
-    style = {style.input}
+    onFocus={(e) => {e.target.select()}}
+    className= 'titles input1'
+    multiline
     autoFocus
     fullWidth
     onBlur={() => setOpen(!open)}
+    type={'text'}
     />
     </div>
   ) : (
-    <div style= {style.title}>
+    <div className= 'titles'>
     <Typography
     onClick = {() => setOpen(!open)}
-    style = {style.todo} >
+    className= 'titles todo' >
     {title}
     </Typography>
-    <MoreHoriz style = {style.horiz} />
+    <MoreHorizIcon fontSize='small' className= 'horiz' />
     </div>
   )
 }
