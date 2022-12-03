@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Paper } from '@mui/material';
 import { InputBase } from '@mui/material';
+import Button from '@mui/material/Button';
+import { IconButton } from '@mui/material';
 
 function Cards({card}) {
 
@@ -17,9 +19,14 @@ function Cards({card}) {
     multiline
     autoFocus
     fullWidth
+    minRows={3}
     onBlur={() => setOpen(!open)}
     type={'text'}
     />
+    <Button className= 'btn button'
+    onClick= {() => setOpen(false)} >Save</Button>
+    <IconButton
+    onClick= {() => setOpen(false)} />
     </div>
   ) : (
     <div>

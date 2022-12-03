@@ -28,7 +28,9 @@ const [open, setOpen] = useState(false);
     className= 'titles todo' >
     {title}
     </Typography>
-    <MoreHorizIcon fontSize='small' className= 'horiz' />
+    <MoreHorizIcon
+    fontSize='small'
+    className= 'horiz' />
     </div>
   )
 }

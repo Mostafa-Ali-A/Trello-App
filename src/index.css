@@ -15,14 +15,14 @@
 }
 
 .cards {
-  padding: 3px, 3px, 3px, 6px;
   margin: 15px;
   cursor: pointer;
 }
 
 .card.input3 {
-  margin: 0 15px 45px 15px;
+  margin: 0 15px 0px 15px;
   font-size: 15.4px;
+  border: none;
 }
 
 .titles.input1 {
@@ -30,7 +30,7 @@
   font-size: 15px;
   font-weight: bold;
   height: 2px;
-  margin-bottom: 0px;
+  margin-bottom: 1px;
   margin-top: 22.5px;
 }
 
@@ -65,14 +65,13 @@
 
 .input.card {
   margin-top: 20px;
+  border: none;
 }
 
 .input.input2 {
-  padding: 3px, 3px, 3px, 6px;
-  margin: 0px, 3px, 3px, 3px;
+  margin-left: 15px;
   background-color: #EBECF0;
   color: #5E6C84;
-  border: none;
   cursor: pointer;
 }
 .input.input2:hover {
@@ -81,31 +80,29 @@
 }
 
 .inputCard.card1 {
-  padding-bottom: 30px;
-  margin: 0px, 3px, 3px, 3px;
-  border: none;
+  margin-left: 5px;
 }
 
 .inputCard.input3 {
-  margin: 0;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 25px;
+  margin: 0px;
 }
 
 ::placeholder {
   font-weight: bold;
 }
 
-.inputCard.button {
+.btn.button {
   background-color: #0079BF;
   color: #fff;
   margin: 6px;
   text-transform: none;
 }
-.inputCard.button:hover {
+.btn.button:hover {
   background-color: #026aa7;
-}
-
-.inputCard.confirm {
-  margin: 0px, 3px, 3px, 3px;
+  color: #fff;
 }
 
 .inputCard.close {
