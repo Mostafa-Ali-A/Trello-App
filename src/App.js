@@ -5,7 +5,7 @@ import store from './Utils/store';
 
 function App() {
 
-  const [data, setData] = useState(store);
+  const [data/*, setData*/] = useState(store);
 
     return (
       <div className= 'container'>

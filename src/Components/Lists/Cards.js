@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import { Paper } from '@mui/material';
-import { InputBase } from '@mui/material';
-import Button from '@mui/material/Button';
-import { IconButton } from '@mui/material';
+import { Paper, InputBase, Button, Box } from '@mui/material';
 
 function Cards({card}) {
 
@@ -10,12 +7,12 @@ function Cards({card}) {
 
   return (
     <div>
-  {open ? (
-    <div>
+    {open ? (
+    <Box
+    className= 'card input3'>
     <InputBase
     value = {card.content}
     onFocus={(e) => {e.target.select()}}
-    className= 'card input3'
     multiline
     autoFocus
     fullWidth
@@ -23,20 +20,18 @@ function Cards({card}) {
     onBlur={() => setOpen(!open)}
     type={'text'}
     />
-    <Button className= 'btn button'
+    <Button className= 'btn button cards'
     onClick= {() => setOpen(false)} >Save</Button>
-    <IconButton
-    onClick= {() => setOpen(false)} />
-    </div>
-  ) : (
-    <div>
-    <Paper className= 'cards'
+    </Box>
+    ) : (
+    <Paper
     onClick = {() => setOpen(!open)}
-    >{card.content}
+    className= 'cards'
+    >
+    {card.content}
     </Paper>
-    </div>
-  )
-}
+    )
+  }
   </div>
   );
  }

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import Typography from '@mui/material/Typography';
-import { Collapse, Paper} from '@mui/material';
-import InputCard from './InputCard';
+import { Collapse, Paper, Typography } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
+import InputCard from './InputCard';
 
 function InputContainer() {
 

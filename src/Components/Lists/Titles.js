@@ -17,6 +17,7 @@ const [open, setOpen] = useState(false);
     multiline
     autoFocus
     fullWidth
+    maxRows={15}
     onBlur={() => setOpen(!open)}
     type={'text'}
     />

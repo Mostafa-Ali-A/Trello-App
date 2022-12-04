@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import {InputBase, Paper } from '@mui/material';
-import Button from '@mui/material/Button';
-import { IconButton } from '@mui/material';
+import React from 'react';
+import {InputBase, Paper, Button, } from '@mui/material';
 import ClearIcon from '@mui/icons-material/Clear';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import MoreHoriz from '@mui/icons-material/MoreHoriz';
 
 function InputCard({ setOpen }) {
   return (
@@ -27,11 +25,10 @@ function InputCard({ setOpen }) {
       className= 'btn button'
       onClick= {() => setOpen(false)}
       >Add card</Button>
-      <IconButton onClick= {() => setOpen(false)} />
       <ClearIcon
       className= 'inputCard clear'
       onClick= {() => setOpen(false)} />
-      <MoreHorizIcon
+      <MoreHoriz
       className= 'horiz icon' />
       </div>
     </div>

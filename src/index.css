@@ -1,11 +1,15 @@
 /* Main Contents */
+* {
+  box-sizing: border-box;
+  font-size: 15px;
+}
 .container {
   width: 300px;
-  background-color: #EBECF0;
   padding: 8px;
   margin-left: 15px;
   margin-top: 30px;
   border-radius: 3px;
+  background-color: #fff;
 }
 
 .lists {
@@ -15,22 +19,27 @@
 }
 
 .cards {
-  margin: 15px;
+  margin: 10px;
+  padding: 5px 8px 5px 8px;
   cursor: pointer;
 }
 
 .card.input3 {
-  margin: 0 15px 0px 15px;
-  font-size: 15.4px;
+  width: 280px;
+  height: 90px;
+  padding-left: 8px;
+  padding-right: 16px;
+  margin-left: 10px;
+  margin-bottom: 50px;
   border: none;
+  z-index: 1;
 }
 
 .titles.input1 {
   margin: 15px;
-  font-size: 15px;
   font-weight: bold;
   height: 2px;
-  margin-bottom: 0px;
+  margin-bottom: 11px;
   margin-top: 22.5px;
 }
 
@@ -47,12 +56,12 @@
 
 .titles.todo {
   flex-grow: 15;
-  font-size: 15px;
   font-weight: bold;
 }
+
 .horiz.icon{
   margin-right: auto;
-  margin-left: 152px;
+  margin-left: 150px;
 }
 .horiz {
   color: #6b778c;
@@ -60,23 +69,26 @@
   cursor: pointer;
 }
 .horiz:hover {
+  background-color: #cdcfda;
   color: #4b5361;
 }
 
 .input.card {
+  background-color: #EBECF0;
   margin-top: 20px;
   border: none;
+  padding-left: 15px;
 }
 
 .input.input2 {
-  margin-left: 15px;
-  background-color: #EBECF0;
   color: #5E6C84;
   cursor: pointer;
 }
 .input.input2:hover {
   background-color: #cdcfda;
   color: #4b5361;
+  border-radius: 1px;
+  margin-right: 40px;
 }
 
 .inputCard.card1 {
@@ -93,6 +105,11 @@
 ::placeholder {
   font-weight: bold;
 }
+.btn.button.cards {
+  width: 80px;
+  margin-top: 30px;
+  margin-left: -2px;
+}
 
 .btn.button {
   background-color: #0079BF;
@@ -105,12 +122,11 @@
   color: #fff;
 }
 
-.inputCard.close {
+.inputCard.clear {
   color: #6b778c;
   cursor: pointer;
-  margin-left: -15px;
 }
-.inputCard.close:hover {
+.inputCard.clear:hover {
   color: #4b5361;
 }
 
