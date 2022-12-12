@@ -1,8 +1,14 @@
 /* Main Contents */
 * {
   box-sizing: border-box;
-  font-size: 15px;
+  font-size: 14px;
 }
+
+body {
+  overflow-x: auto;
+  /*overflow-y: hidden;*/
+}
+
 .container {
   width: 300px;
   padding: 8px;
@@ -24,15 +30,42 @@
   cursor: pointer;
 }
 
+.card.darken {
+  background-color: #0009;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 0;
+}
+
+.contain {
+  position: relative;
+  user-select: none
+}
+
+.contain2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.content {
+  margin: 10px;
+  padding: 5px 8px 5px 8px;
+  width: 280px;
+  margin-left: 10px;
+  border: none;
+}
+
 .card.input3 {
   width: 280px;
-  height: 90px;
-  padding-left: 8px;
-  padding-right: 16px;
+  padding: 5px 8px 25px 8px;
   margin-left: 10px;
-  margin-bottom: 50px;
   border: none;
-  z-index: 1;
 }
 
 .titles.input1 {
@@ -70,7 +103,7 @@
 }
 .horiz:hover {
   background-color: #cdcfda;
-  color: #4b5361;
+  color: rgba(0,0,0,0.6);
 }
 
 .input.card {
@@ -86,7 +119,7 @@
 }
 .input.input2:hover {
   background-color: #cdcfda;
-  color: #4b5361;
+  color: rgba(0,0,0,0.6);
   border-radius: 1px;
   margin-right: 40px;
 }
@@ -105,10 +138,10 @@
 ::placeholder {
   font-weight: bold;
 }
-.btn.button.cards {
+.card.btn.button {
   width: 80px;
-  margin-top: 30px;
-  margin-left: -2px;
+  margin-top: 15px;
+  margin-left: 10px;
 }
 
 .btn.button {
@@ -127,6 +160,6 @@
   cursor: pointer;
 }
 .inputCard.clear:hover {
-  color: #4b5361;
+  color: rgba(0,0,0,0.6);
 }
 

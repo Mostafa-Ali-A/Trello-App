@@ -7,14 +7,14 @@ import Input from '../Input/Input';
 function List({list}) {
   return (
     <div className= 'lists'>
-    <CssBaseline />
-    <Title title={list.title} />
-    {list.cards.map((card) => (
+      <CssBaseline />
+      <Title title={list.title} />
+      {list.cards.map((card) => (
       <Card key={card.id} card={card} />
-  ))}
-    <Input />
+      ))}
+      <Input listId={list.id} />
     </div>
   )
 }
 
- export default List;
+export default List;

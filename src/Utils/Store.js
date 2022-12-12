@@ -1,15 +1,14 @@
 const cards = [
   {
     id: 'card-1',
-    content: 'Learn Back End Node.js'
-  },
-  {
+    title: 'Learn Back End Node.jsLearn Back End Node.jsLearn Back End Node.js'
+  },{
     id: 'card-2',
-    content: 'Build Full Stack Projects'
+    title: 'Build Full Stack Projects1'
   },
   {
     id: 'card-3',
-    content: 'Work as Freelance'
+    title: 'Work as Freelance'
   }
 ];
 
@@ -26,11 +25,11 @@ const data = {
     cards: [
     {
       id: 'Card-4',
-      content: 'Improve My React Skills'
+      title: 'Improve My React Skills'
       },
       {
         id: 'Card-5',
-        content: 'Build React Projects'
+        title: 'Build React Projects'
       }
     ]
 },

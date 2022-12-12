@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Paper, InputBase, Button, Box } from '@mui/material';
+import { Paper, InputBase, Button } from '@mui/material';
 
 function Cards({card}) {
 
@@ -7,32 +7,36 @@ function Cards({card}) {
 
   return (
     <div>
-    {open ? (
-    <Box
-    className= 'card input3'>
-    <InputBase
-    value = {card.content}
-    onFocus={(e) => {e.target.select()}}
-    multiline
-    autoFocus
-    fullWidth
-    minRows={3}
-    onBlur={() => setOpen(!open)}
-    type={'text'}
-    />
-    <Button className= 'btn button cards'
-    onClick= {() => setOpen(false)} >Save</Button>
-    </Box>
-    ) : (
-    <Paper
-    onClick = {() => setOpen(!open)}
-    className= 'cards'
-    >
-    {card.content}
-    </Paper>
-    )
-  }
+      {open ? (
+        <div className='contain'>
+          <div className='card darken' ></div>
+          <Paper className= 'card content' >
+          {card.title}
+          </Paper>
+          <div className='contain2' >
+          <InputBase className= 'card input3'
+          value = {card.title}
+          onFocus={(e) => {e.target.select()}}
+          minRows={3}
+          multiline
+          autoFocus
+          fullWidth
+          onBlur={() => setOpen(!open)}
+          type={'text'}
+          />
+          <Button className= 'card btn button'
+          onClick= {() => setOpen(false)}>Save</Button>
+          </div>
+        </div>
+      ) : (
+        <Paper className= 'cards'
+        onClick = {() => setOpen(!open)}>
+        {card.title}
+        </Paper>
+      )
+    }
   </div>
   );
- }
- export default Cards;
+}
+
+export default Cards;
