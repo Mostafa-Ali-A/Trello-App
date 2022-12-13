@@ -1,10 +1,36 @@
 const cards = [
   {
     id: 'card-1',
-    title: 'Learn Back End Node.jsLearn Back End Node.jsLearn Back End Node.js'
+    title: 'Learn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.js'
   },{
     id: 'card-2',
-    title: 'Build Full Stack Projects1'
+    title: 'Build Full Stack Projects'
+  },{
+    id: 'card-2',
+    title: 'Build Full Stack Projects'
+  },
+  {
+    id: 'card-2',
+    title: 'Build Full Stack Projects'
+  },
+  {
+    id: 'card-2',
+    title: 'Build Full Stack Projects'
+  },{
+    id: 'card-2',
+    title: 'Build Full Stack Projects'
+  },{
+    id: 'card-2',
+    title: 'Build Full Stack Projects'
+  },{
+    id: 'card-2',
+    title: 'Build Full Stack Projects'
+  },{
+    id: 'card-2',
+    title: 'Build Full Stack Projects'
+  },{
+    id: 'card-2',
+    title: 'Build Full Stack Projects'
   },
   {
     id: 'card-3',

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { InputBase, Typography } from '@mui/material';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import MoreHoriz from '@mui/icons-material/MoreHoriz';
 
 function Title({title}) {
 
@@ -29,7 +29,7 @@ const [open, setOpen] = useState(false);
       className= 'titles todo' >
       {title}
       </Typography>
-      <MoreHorizIcon
+      <MoreHoriz
       fontSize='small'
       className= 'horiz' />
     </div>

@@ -6,8 +6,8 @@ import StoreApi from '../../Utils/StoreApi';
 
 function InputCard({ setOpen, listId }) {
 
-  const [text, setText] = useState ('');
-  const {addMoreCard} = useContext (StoreApi);
+  const [text, setText] = useState('');
+  const {addMoreCard} = useContext(StoreApi);
 
   return (
     <div>

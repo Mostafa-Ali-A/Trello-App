@@ -1,6 +1,6 @@
 import './index.css';
 import React, { useState } from 'react';
-import { v4 as uuid } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 import List from './Components/Lists/Lists';
 import store from './Utils/store';
 import StoreApi from './Utils/StoreApi';
@@ -10,7 +10,7 @@ function App() {
   const [data, setData] = useState(store);
 
   const addMoreCard = (title, listId) => {
-  const newCardId = uuid();
+  const newCardId = uuidv4();
 
   const newCard = {
     id: newCardId,

@@ -2,7 +2,7 @@ import React from 'react';
 import { CssBaseline } from '@mui/material';
 import Card from './Cards';
 import Title from './Titles';
-import Input from '../Input/Input';
+import Input from '../Input/InputContainer';
 
 function List({list}) {
   return (
