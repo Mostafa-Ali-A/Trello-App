@@ -2,7 +2,7 @@ import './index.css';
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import List from './Components/Lists/Lists';
-import store from './Utils/store';
+import store from './Utils/Store';
 import StoreApi from './Utils/StoreApi';
 
 function App() {

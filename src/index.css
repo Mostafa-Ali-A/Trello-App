@@ -6,11 +6,13 @@
 
 body {
   overflow-x: auto;
-  /*overflow-y: hidden;*/
+  overflow-y: hidden;
 }
 
 .container {
-  width: 300px;
+  display: flex;
+  height: 580px;
+  width: 650px;
   padding: 8px;
   margin-left: 15px;
   margin-top: 30px;
@@ -19,7 +21,9 @@ body {
 }
 
 .lists {
-  width: 300px;
+  width: 350px;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: #EBECF0;
   margin-left: 15px;
 }
@@ -55,13 +59,13 @@ body {
 .content {
   margin: 10px;
   padding: 5px 8px 5px 8px;
-  width: 280px;
+  width: 350px;
   margin-left: 10px;
   border: none;
 }
 
 .card.input3 {
-  width: 280px;
+  width: 350px;
   padding: 5px 8px 25px 8px;
   margin-left: 10px;
   border: none;
