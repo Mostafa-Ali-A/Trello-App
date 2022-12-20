@@ -113,7 +113,8 @@ body {
 
 .horiz.icon{
   margin-right: auto;
-  margin-left: 150px;
+  margin-left: 240px;
+  margin-top: -55px;
 }
 .horiz {
   color: #6b778c;
@@ -148,7 +149,7 @@ body {
 }
 
 .inputCard.input3 {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   padding-left: 15px;
   padding-right: 25px;
   margin: 0px;
@@ -164,9 +165,12 @@ body {
 }
 
 .btn.button {
+  padding: 6px 10px 6px 10px;
+  font-size: 14px;
   background-color: #0079BF;
   color: #fff;
   margin: 6px;
+  margin-bottom: -10px;
   text-transform: none;
 }
 .btn.button:hover {
@@ -175,6 +179,8 @@ body {
 }
 
 .inputCard.clear {
+  margin-top: 15px;
+  font-size: x-large;
   color: #6b778c;
   cursor: pointer;
 }

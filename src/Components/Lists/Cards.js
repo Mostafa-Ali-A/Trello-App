@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Paper, InputBase, Button } from '@mui/material';
 
-function Cards({card}) {
+function Cards({ card }) {
 
   const [open, setOpen] = useState(false);
 

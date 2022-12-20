@@ -33,9 +33,11 @@ function InputCard({ setOpen, listId }) {
         onClick= {() => {setOpen(false);addMoreCard(text, listId);setText('')}}
         >Add card</Button>
         <ClearIcon
+        fontSize='large'
         className= 'inputCard clear'
         onClick= {() => setOpen(false)} />
         <MoreHoriz
+        fontSize='large'
         className= 'horiz icon' />
       </div>
     </div>

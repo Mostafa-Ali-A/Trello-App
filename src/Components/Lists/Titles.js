@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { InputBase, Typography } from '@mui/material';
 import MoreHoriz from '@mui/icons-material/MoreHoriz';
 
-function Title({title}) {
+function Title({ title }) {
 
 const [open, setOpen] = useState(false);
 
