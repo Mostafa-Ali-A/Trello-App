@@ -35,11 +35,12 @@ function App() {
         <div className= 'container'>
           {data.listIds.map((listId) => {
           const list = data.lists[listId];
-          return <List list={list} key={listId}/>;
+          return
+          <List list={list} key={listId}/>;
           })}
         </div>
       </StoreApi.Provider>
     );
   }
 
-  export default(App);
+export default(App);

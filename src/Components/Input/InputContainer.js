@@ -18,13 +18,13 @@ const [setFocus] = useState(false);
         className= 'input card'
         elevation={0}
         onClick= {() => {setOpen(!open);setFocus(true)}} >
-        <Typography
-        className= 'input input2'>
-        <AddIcon /> Add a card
-        </Typography>
+          <Typography
+          className= 'input input2'>
+            <AddIcon /> Add a card
+          </Typography>
         </Paper>
       </Collapse>
     </div>
   );
- }
- export default InputContainer;
+}
+export default InputContainer;
