@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
   font-size: 14px;
+  border-radius: 3px;
 }
 
 body {
@@ -11,21 +12,37 @@ body {
 
 .container {
   display: flex;
-  height: 580px;
-  width: 650px;
+  width: 583px;
   padding: 8px;
   margin-left: 15px;
   margin-top: 30px;
-  border-radius: 3px;
-  background-color: #fff;
 }
 
 .lists {
-  width: 350px;
+  width: 272px;
+  margin-left: 15px;
+}
+
+.color {
+  background-color: #EBECF0;
+}
+
+.overflow {
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #EBECF0;
-  margin-left: 15px;
+  max-height: 470px;
+}
+.overflow::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.overflow::-webkit-scrollbar-thumb {
+  background-color: #091e4214;
+  border-radius: 10px;
+}
+.overflow::-webkit-scrollbar-track {
+  background-color: #091e4214;
+  border-radius: 10px;
 }
 
 .cards {
@@ -51,31 +68,30 @@ body {
 
 .contain2 {
   position: absolute;
+  width: 248px;
+  margin-right: 20px;
   top: 0;
-  left: 0;
   z-index: 2;
 }
 
 .content {
   margin: 10px;
   padding: 5px 8px 5px 8px;
-  width: 350px;
   margin-left: 10px;
   border: none;
 }
 
 .card.input3 {
-  width: 350px;
-  padding: 5px 8px 25px 8px;
+  padding: 5px 5px 10px 5px;
   margin-left: 10px;
-  border: none;
+  margin-right: 10px;
 }
 
 .titles.input1 {
   margin: 15px;
   font-weight: bold;
   height: 2px;
-  margin-bottom: 11px;
+  margin-bottom: 19px;
   margin-top: 22.5px;
 }
 

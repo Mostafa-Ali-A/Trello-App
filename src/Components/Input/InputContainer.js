@@ -25,6 +25,6 @@ const [setFocus] = useState(false);
         </Paper>
       </Collapse>
     </div>
-  )
+  );
  }
  export default InputContainer;

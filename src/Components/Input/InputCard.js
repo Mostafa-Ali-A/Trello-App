@@ -39,6 +39,6 @@ function InputCard({ setOpen, listId }) {
         className= 'horiz icon' />
       </div>
     </div>
-  )
+  );
 }
 export default InputCard;
