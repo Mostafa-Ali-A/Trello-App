@@ -84,11 +84,11 @@ body {
 .card.input3 {
   padding: 5px 5px 10px 5px;
   margin-left: 8px;
-  margin-right: 8px;
+  margin-right: 80px;
 }
 
 .titles.input1 {
-  margin: 5px 50px 0px 8px;
+  margin: 5px 30px 0px 8px;
   padding-left: 7px;
   font-weight: bold;
   height: 0;
@@ -176,6 +176,7 @@ body {
 }
 
 .inputList.input3 {
+  width: 93%;
   margin-left: 10px;
 }
 
@@ -185,7 +186,7 @@ body {
 .card.btn.button {
   width: 80px;
   margin-top: 15px;
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 .btn.button {
