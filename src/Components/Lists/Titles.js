@@ -9,7 +9,7 @@ const [open, setOpen] = useState(false);
   return(
   <div>
     {open ? (
-    <div>
+    <div className= 'titles inputWrap' >
       <InputBase
       value = {title}
       onFocus={(e) => {e.target.select()}}
@@ -21,6 +21,9 @@ const [open, setOpen] = useState(false);
       onBlur={() => setOpen(!open)}
       type={'text'}
       />
+      <MoreHoriz
+      fontSize='small'
+      className= 'horiz in' />
     </div>
     ) : (
     <div className= 'Titles'>
