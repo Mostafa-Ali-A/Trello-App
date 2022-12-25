@@ -23,7 +23,7 @@ const [open, setOpen] = useState(false);
       />
     </div>
     ) : (
-    <div className= 'titles'>
+    <div className= 'Titles'>
       <Typography
       onClick = {() => setOpen(!open)}
       className= 'titles todo' >

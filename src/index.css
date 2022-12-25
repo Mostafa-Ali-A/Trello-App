@@ -11,20 +11,18 @@ body {
   overflow-y: hidden;
 }
 
-.container {
+.App {
+  margin-left: 10px;
+  margin-top: 10px;
   display: flex;
-  width: 583px;
-  padding: 8px;
-  margin-left: 15px;
-  margin-top: 30px;
 }
 
-.lists {
+.Lists {
   width: 272px;
-  margin-left: 15px;
+  margin-right: 10px;
 }
 
-.color {
+.lists.color {
   background-color: #EBECF0;
 }
 
@@ -46,8 +44,9 @@ body {
   border-radius: 10px;
 }
 
-.cards {
-  margin: 10px;
+.Cards {
+  width: 248px;
+  margin: 8px;
   padding: 5px 8px 5px 8px;
   cursor: pointer;
 }
@@ -75,40 +74,38 @@ body {
   z-index: 2;
 }
 
-.content {
-  margin: 10px;
+.card.content {
+  margin: 8px;
   padding: 5px 8px 5px 8px;
-  margin-left: 10px;
+  margin-left: 8px;
   border: none;
 }
 
 .card.input3 {
   padding: 5px 5px 10px 5px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .titles.input1 {
-  margin: 15px;
+  margin: 5px 50px 0px 8px;
+  padding-left: 7px;
   font-weight: bold;
-  height: 2px;
-  margin-bottom: 19px;
-  margin-top: 22.5px;
+  height: 0;
 }
-
 .titles.input1:focus {
   background-color: #ddd;
 }
 
-.titles {
-  margin: 15px;
+.Titles {
+  margin-left: 15px;
   display: flex;
   flex-direction: row;
   cursor: pointer;
 }
 
 .titles.todo {
-  flex-grow: 15;
+  flex-grow: .94;
   font-weight: bold;
 }
 
@@ -120,7 +117,6 @@ body {
 }
 .horiz {
   color: #6b778c;
-  margin-right: auto;
   cursor: pointer;
 }
 .horiz:hover {
@@ -135,6 +131,10 @@ body {
   padding-left: 15px;
 }
 
+.input.list {
+  background-color: #ffffff3d;
+}
+
 .input.input2 {
   color: #5E6C84;
   cursor: pointer;
@@ -147,8 +147,25 @@ body {
   margin-right: 40px;
 }
 
+.input.list2 {
+  padding: 10px 150px 10px 12px;
+  cursor: pointer;
+}
+.input.list2:hover {
+  background-color: #ffffff3d;
+}
+
+.inputCardList {
+  background-color: #EBECF0;
+}
+
 .inputCard.card1 {
   margin-left: 5px;
+}
+
+.inputCard.list {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .inputCard.input3 {
@@ -156,6 +173,10 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 2px;
+}
+
+.inputList.input3 {
+  margin-left: 10px;
 }
 
 ::placeholder {
@@ -181,13 +202,19 @@ body {
   color: #fff;
 }
 
-.inputCard.clear {
+.btn.button.list {
+  margin-bottom: 4px;
+}
+
+.inputCard.icons {
   margin-top: 17px;
   font-size: x-large;
   color: #6b778c;
   cursor: pointer;
 }
-.inputCard.clear:hover {
+.inputCard.icons:hover {
   color: rgba(0,0,0,0.6);
 }
-
+.inputCard.icons.close {
+  margin-top: 0;
+}

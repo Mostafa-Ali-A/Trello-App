@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import List from './Components/Lists/Lists';
 import store from './Utils/Store';
 import StoreApi from './Utils/StoreApi';
+import InputContainer from './Components/Input/InputContainer';
 
 function App() {
 
@@ -32,11 +33,12 @@ function App() {
 
     return (
       <StoreApi.Provider value={{addMoreCard}}>
-        <div className= 'container'>
+        <div className= 'App'>
           {data.listIds.map((listId) => {
           const list = data.lists[listId];
           return <List list={list} key={listId}/>;
           })}
+          <InputContainer type= 'list' />
         </div>
       </StoreApi.Provider>
     );

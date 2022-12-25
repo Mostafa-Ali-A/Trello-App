@@ -29,7 +29,7 @@ function Cards({ card }) {
             </div>
           </div>
         ) : (
-          <Paper className= 'cards'
+          <Paper className= 'Cards'
           onClick = {() => setOpen(!open)} >
           {card.title}
           </Paper>

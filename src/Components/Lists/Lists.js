@@ -1,19 +1,19 @@
 import React from 'react';
 import Card from './Cards';
 import Title from './Titles';
-import Input from '../Input/InputContainer';
+import InputContainer from '../Input/InputContainer';
 
 function List({ list }) {
   return (
-    <div className= 'lists'>
-      <div className='color' >
+    <div className= 'Lists'>
+      <div className='lists color' >
         <Title title={list.title} />
         <div className='overflow' >
           {list.cards.map((card) => (
           <Card key={card.id} card={card} />
           ))}
         </div>
-        <Input listId={list.id} />
+        <InputContainer listId={list.id} type= 'card' />
       </div>
     </div>
   )
