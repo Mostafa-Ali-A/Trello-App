@@ -31,8 +31,27 @@ function App() {
   setData(newState);
   };
 
+  const addMoreList = (title, listId) => {
+    const newListId = uuidv4();
+
+    const newList = {
+      id: newListId,
+      title,
+      cards: [],
+    };
+
+    const newState = {
+      listIds: [...data.listIds, newListId],
+      lists: {
+        ...data.lists,
+        [newListId]: newList,
+      },
+    }
+    setData(newState);
+    };
+
     return (
-      <StoreApi.Provider value={{addMoreCard}}>
+      <StoreApi.Provider value={{ addMoreCard, addMoreList }}>
         <div className= 'App'>
           {data.listIds.map((listId) => {
           const list = data.lists[listId];

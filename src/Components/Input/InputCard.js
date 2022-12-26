@@ -8,7 +8,7 @@ import StoreApi from '../../Utils/StoreApi';
 function InputCard({ setOpen, listId, type }) {
 
   const [text, setText] = useState('');
-  const {addMoreCard} = useContext(StoreApi);
+  const { addMoreCard, addMoreList } = useContext(StoreApi);
 
   return (
     <div className= 'inputCardList'>
@@ -53,7 +53,7 @@ function InputCard({ setOpen, listId, type }) {
         </Button>
         : <Button
         className= 'btn button list'
-        onClick= {() => {setOpen(false);addMoreCard(text, listId);setText('')}}>
+        onClick= {() => {setOpen(false);addMoreList(text);setText('')}}>
         Add list
         </Button>
       }
