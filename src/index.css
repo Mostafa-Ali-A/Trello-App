@@ -18,9 +18,9 @@ body {
 }
 
 .Lists {
-  margin-right: 10px;
-  width: 272px;
   background-color: #EBECF0;
+  width: 272px;
+  margin-right: 10px;
 }
 
 .overflow {
@@ -60,7 +60,6 @@ body {
 }
 
 .contain {
-
   position: relative;
 }
 
