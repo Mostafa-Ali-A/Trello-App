@@ -9,7 +9,9 @@ function Cards({ card }) {
     <div>
       {open ? (
           <div className='contain'>
-            <div className='card darken' ></div>
+            <div className='card darken'
+            onClick = {() => setOpen(!open)}
+            />
             <Paper className= 'card content' >
             {card.title}
             </Paper>
@@ -21,7 +23,7 @@ function Cards({ card }) {
               multiline
               autoFocus
               fullWidth
-              onBlur={() => setOpen(!open)}
+
               type={'text'}
               />
               <Button className= 'card btn button'
