@@ -19,6 +19,7 @@ body {
 
 .Lists {
   width: 272px;
+  padding: 0;
   margin-right: 10px;
 }
 
@@ -117,7 +118,7 @@ body {
 .horiz.icon{
   font-size: x-large;
   margin-right: auto;
-  margin-left: 240px;
+  margin-left: 235px;
   margin-top: -50px;
 }
 
@@ -159,7 +160,8 @@ body {
 }
 
 .input.list2 {
-  padding: 10px 150px 10px 12px;
+  width: 272px;
+  padding: 10px 10px;
   cursor: pointer;
 }
 .input.list2:hover {
@@ -172,6 +174,7 @@ body {
 }
 
 .inputCard.card1 {
+  margin-right: 15px;
   margin-left: 5px;
 }
 
@@ -186,8 +189,8 @@ body {
 
 .inputCard.input3 {
   padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 2px;
 }
 

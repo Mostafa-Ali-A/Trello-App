@@ -7,11 +7,12 @@ function InputContainer({ listId, type }) {
 
 const [open, setOpen] = useState(false);
 const [setFocus] = useState(false);
+const [setOverFlow] = useState(true);
 
   return (
     <div>
       <Collapse in={open} >
-        <InputCard setOpen={setOpen} listId={listId} type= {type} />
+        <InputCard setOpen={setOpen} listId={listId} type= {type} setOverFlow={setOverFlow} />
       </Collapse>
       <Collapse in={!open} >
       {type === 'card'
