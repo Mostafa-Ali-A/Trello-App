@@ -5,8 +5,8 @@ import InputContainer from '../Input/InputContainer';
 
 function List({ list }) {
   return (
-    <div className= 'Lists'>
-      <div className='lists color' >
+    <div>
+      <div className='Lists' >
         <Title title={list.title} />
         <div className='overflow' >
           {list.cards.map((card) => (

@@ -18,11 +18,8 @@ body {
 }
 
 .Lists {
-  width: 272px;
   margin-right: 10px;
-}
-
-.lists.color {
+  width: 272px;
   background-color: #EBECF0;
 }
 
@@ -63,6 +60,7 @@ body {
 }
 
 .contain {
+
   position: relative;
 }
 
