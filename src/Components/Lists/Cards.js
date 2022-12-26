@@ -23,7 +23,6 @@ function Cards({ card }) {
               multiline
               autoFocus
               fullWidth
-
               type={'text'}
               />
               <Button className= 'card btn button'
