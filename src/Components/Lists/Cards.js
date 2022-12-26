@@ -30,7 +30,8 @@ function Cards({ card }) {
           </div>
         ) : (
           <Paper className= 'Cards'
-          onClick = {() => setOpen(!open)} >
+          onClick = {() => setOpen(!open)}
+          onContextMenu ={ (e) =>{ e.preventDefault();setOpen(!open);}} >
           {card.title}
           </Paper>
           )
