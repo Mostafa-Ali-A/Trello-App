@@ -13,11 +13,11 @@ function Cards({ card }) {
             onClick = {() => setOpen(!open)}
             />
             <Paper className= 'card content' >
-            {card.title}
+            {card.texta}
             </Paper>
             <div className='contain2' >
               <InputBase className= 'card input3'
-              value = {card.title}
+              value = {card.text}
               onFocus={(e) => {e.target.select()}}
               minRows={3}
               multiline
@@ -33,7 +33,7 @@ function Cards({ card }) {
           <Paper className= 'Cards'
           onClick = {() => setOpen(!open)}
           onContextMenu ={ (e) =>{ e.preventDefault();setOpen(!open);}} >
-          {card.title}
+          {card.text}
           </Paper>
           )
       }

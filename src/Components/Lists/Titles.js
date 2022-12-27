@@ -1,24 +1,28 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { InputBase, Typography } from '@mui/material';
 import MoreHoriz from '@mui/icons-material/MoreHoriz';
+import StoreApi from '../../Utils/StoreApi';
 
-function Title({ title }) {
+function Title({ text, listId }) {
 
 const [open, setOpen] = useState(false);
+const [newText, setNewText] = useState(text);
+const {updateListTitle} = useContext(StoreApi);
 
   return(
   <div>
     {open ? (
     <div className= 'titles inputWrap' >
       <InputBase
-      value = {title}
-      onFocus={(e) => {e.target.select()}}
+      value = {newText}
+      onChange= {(e) => {setNewText(e.target.value)}}
+      onFocus= {(e) => {e.target.select()}}
       className= 'titles input1'
       multiline
       autoFocus
       fullWidth
       maxRows={15}
-      onBlur={() => setOpen(!open)}
+      onBlur={() => {setOpen(!open);updateListTitle( newText, listId )}}
       type={'text'}
       />
       <MoreHoriz
@@ -30,7 +34,7 @@ const [open, setOpen] = useState(false);
       <Typography
       onClick = {() => setOpen(!open)}
       className= 'titles todo' >
-      {title}
+      {text}
       </Typography>
       <MoreHoriz
       fontSize='small'

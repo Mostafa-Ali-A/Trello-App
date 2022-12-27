@@ -1,40 +1,40 @@
 const cards = [
   {
     id: 'card-1',
-    title: 'Learn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.js'
+    text: 'Learn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.jsLearn Back End Node.js'
   },{
     id: 'card-2',
-    title: 'Build Full Stack Projects'
+    text: 'Build Full Stack Projects'
   },{
     id: 'card-2',
-    title: 'Build Full Stack Projects'
+    text: 'Build Full Stack Projects'
   },
   {
     id: 'card-2',
-    title: 'Build Full Stack Projects'
+    text: 'Build Full Stack Projects'
   },
   {
     id: 'card-2',
-    title: 'Build Full Stack Projects'
+    text: 'Build Full Stack Projects'
   },{
     id: 'card-2',
-    title: 'Build Full Stack Projects'
+    text: 'Build Full Stack Projects'
   },{
     id: 'card-2',
-    title: 'Build Full Stack Projects'
+    text: 'Build Full Stack Projects'
   },{
     id: 'card-2',
-    title: 'Build Full Stack Projects'
+    text: 'Build Full Stack Projects'
   },{
     id: 'card-2',
-    title: 'Build Full Stack Projects'
+    text: 'Build Full Stack Projects'
   },{
     id: 'card-2',
-    title: 'Build Full Stack Projects'
+    text: 'Build Full Stack Projects'
   },
   {
     id: 'card-3',
-    title: 'Work as Freelance'
+    text: 'Work as Freelance'
   }
 ];
 
@@ -42,20 +42,20 @@ const data = {
   lists: {
     'list-1': {
       id: 'list-1',
-      title: 'To Do',
+      text: 'To Do',
       cards
     },
   'list-2': {
     id: 'list-2',
-    title: 'Doing',
+    text: 'Doing',
     cards: [
     {
       id: 'Card-4',
-      title: 'Improve My React Skills'
+      text: 'Improve My React Skills'
       },
       {
         id: 'Card-5',
-        title: 'Build React Projects'
+        text: 'Build React Projects'
       }
     ]
 },

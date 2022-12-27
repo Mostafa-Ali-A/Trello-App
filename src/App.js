@@ -10,12 +10,12 @@ function App() {
 
   const [data, setData] = useState(store);
 
-  const addMoreCard = (title, listId) => {
+  const addMoreCard = (text, listId) => {
   const newCardId = uuidv4();
 
   const newCard = {
     id: newCardId,
-    title,
+    text,
   };
 
   const list = data.lists[listId];
@@ -31,12 +31,12 @@ function App() {
   setData(newState);
   };
 
-  const addMoreList = (title, listId) => {
+  const addMoreList = (text) => {
     const newListId = uuidv4();
 
     const newList = {
       id: newListId,
-      title,
+      text,
       cards: [],
     };
 
@@ -50,8 +50,22 @@ function App() {
     setData(newState);
     };
 
+    const updateListTitle = ( text, listId ) => {
+      const list = data.lists[listId];
+        list.text = text;
+
+      const newState = {
+        ...data,
+        lists: {
+          ...data.lists,
+          [listId]: list,
+        },
+      }
+      setData(newState);
+      };
+
     return (
-      <StoreApi.Provider value={{ addMoreCard, addMoreList }}>
+      <StoreApi.Provider value={{ addMoreCard, addMoreList, updateListTitle }}>
         <div className= 'App'>
           {data.listIds.map((listId) => {
           const list = data.lists[listId];

@@ -7,7 +7,7 @@ function List({ list }) {
   return (
     <div>
       <div className='Lists' >
-        <Title title={list.title} />
+        <Title text={list.text} listId={list.id} />
         <div className='overflow' >
           {list.cards.map((card) => (
           <Card key={card.id} card={card} />
